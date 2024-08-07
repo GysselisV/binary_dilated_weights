@@ -20,7 +20,7 @@ class TestOptions(BaseOptions):
         # To avoid cropping, the load_size should be the same as crop_size
         parser.set_defaults(load_size=parser.get_default('crop_size'))
         #mask
-        parser.add_argument('--mask_dir', type=str, required=True, help='Directorio donde se encuentran las máscaras de lesiones')
-        parser.add_argument('--brain_mask_dir', type=str, required=True, help='Directorio donde se encuentran las máscaras de cerebro')
-        self.isTrain = False
+        # parser.add_argument('--mask_dir', type=str, required=True, help='Directorio donde se encuentran las máscaras de lesiones')
+        # parser.add_argument('--brain_mask_dir', type=str, required=True, help='Directorio donde se encuentran las máscaras de cerebro')
+        # self.isTrain = False
         return parser
